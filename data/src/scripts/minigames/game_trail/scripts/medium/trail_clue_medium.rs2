@@ -24,7 +24,7 @@ if(~trail_clue_medium_complete = true) {
 
 // Key drop
 [proc,trail_checkmediumdrop]
-// this was changed from black heather -> ardougne monks at some point, not sure when though
+// this was changed from black heather -> ardougne monks on the 14th March 2005 (https://oldschool.runescape.wiki/w/Update:Magic_and_Wilderness_Updates)
 // https://www.neoseeker.com/runescape/faqs/125252-treasure-trail.html, https://web.archive.org/web/20040813233712/http://runehq.com/viewguidedb.php?id=00350
 if(npc_type = black_heather & inv_total(inv, trail_clue_medium_riddle001) > 0 & ~obj_gettotal(trail_clue_medium_riddle001_key) = 0) {
     obj_add(npc_coord, trail_clue_medium_riddle001_key, 1, ^lootdrop_duration);
